@@ -119,3 +119,9 @@ covers Java 8.
     you're getting started; instead, you may want to begin with a more
     basic editor like [JEdit](http://www.jedit.org/).
 
+
+### Use with Java > 5
+
+To build the code with a recent JDK modify the files `build.xml` by running (requires ant >= 1.10.2):
+
+    sed -i "" 's/<equals arg1="1\.5" arg2="\${ant.java.version}"/<javaversion atleast="1\.5"/g' */build.xml
